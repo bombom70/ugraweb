@@ -9,31 +9,31 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="logos header__logos"></div>
+            <div class="logos logos_header"></div>
             <ul class="menu header__menu">
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Прямая трансляция</a>
+                    <a href="#" class="menu__link menu__link_header">Прямая трансляция</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Ханты-Мансийск</a>
+                    <a href="#" class="menu__link menu__link_header">Ханты-Мансийск</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Новости</a>
+                    <a href="#" class="menu__link menu__link_header">Новости</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Участники</a>
+                    <a href="#" class="menu__link menu__link_header">Участники</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Основная информация</a>
+                    <a href="#" class="menu__link menu__link_header">Основная информация</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Результаты</a>
+                    <a href="#" class="menu__link menu__link_header">Результаты</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Медиа</a>
+                    <a href="#" class="menu__link menu__link_header">Медиа</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
+                    <a href="#" class="menu__link menu__link_header">Контакты</a>
                 </li>
             </ul>
             <ul class="menu-lng">
@@ -67,7 +67,7 @@
         </div>
         <div class="news">
             <div class="container">
-                <h3 class="news__title"><span>Новости</span> турнира</h3>
+                <h3 class="title news__title"><span>Новости</span> турнира</h3>
                 <div class="news-content news__item">
                     <img class="news__photo" src="" />
                     <div class="news__text">
@@ -117,50 +117,55 @@
                     </div>
                 </div>
             </div>
+            <button class="btn btn_still">Показать еще</button>
         </div>
         <div class="partners">
             <div class="container">
-                <h3 class="news__title">Партнеры</h3>
+                <div class="partners__header">
+                    <h3 class="title partners__title">Партнеры</h3>
+                    <div class="switcher">
+                        <div class="switcher_prev"></div>
+                        <div class="switcher_next"></div>
+                    </div>
+                </div>
                 <div class="carousel">
-
+                    <div class="carousel__item carousel__item_current"></div>
                 </div>                
             </div>
         </div>
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="logos footer__logos"></div>
+            <div class="logos logos_footer"></div>
             <ul class="menu footer__menu">
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Прямая трансляция</a>
+                    <a href="#" class="menu__link menu__link_footer">Прямая трансляция</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Ханты-Мансийск</a>
+                    <a href="#" class="menu__link menu__link_footer">Ханты-Мансийск</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Новости</a>
+                    <a href="#" class="menu__link menu__link_footer">Новости</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Участники</a>
+                    <a href="#" class="menu__link menu__link_footer">Участники</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Основная информация</a>
+                    <a href="#" class="menu__link menu__link_footer">Основная информация</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Результаты</a>
+                    <a href="#" class="menu__link menu__link_footer">Результаты</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Медиа</a>
+                    <a href="#" class="menu__link menu__link_footer">Медиа</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
+                    <a href="#" class="menu__link menu__link_footer">Контакты</a>
                 </li>
             </ul>
-            <div class="">
-                <div class="contacts">
-                    <span class="contacts__phone">+7(3467)555-321</span>
-                    <span class="contacts__mail">mail@mail.ru</span>
-                </div>
+            <div class="contacts">
+                <span class="contacts__phone">+7(3467)555-321</span>
+                <span class="contacts__mail">mail@mail.ru</span>
                 <span class="location">Ханты-Мансийск Лопарева,6</span>
             </div>
         </div>
