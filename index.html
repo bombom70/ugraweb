@@ -4,57 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="logos logos_header">
-                <img class="logos__img" src="img/logo1.svg" alt="logo1"/>
-                <img class="logos__img" src="img/logo2.svg" alt="logo2"/>
-                <img class="logos__img" src="img/logo3.svg" alt="logo3"/>
+            <div class="header-wrapper">
+                <div class="logos logos_header">
+                    <img class="logos__img logos__img_main" src="img/logo1.svg" alt="logo1"/>
+                    <img class="logos__img logos__img_mg-left" src="img/logo2.svg" alt="logo2"/>
+                    <img class="logos__img" src="img/logo3.svg" alt="logo3"/>
+                </div>
+                <div class="menu-wrapper">
+                    <ul class="menu header__menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link_header">Прямая трансляция</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link_header">Ханты-Мансийск</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link_header">Новости</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link_header">Участники</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link_header">Основная информация</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link_header">Результаты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link_header">Медиа</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link_header">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="menu--dop">
+                        <ul class="menu-lng">
+                            <li class="menu-lng__item"><a href="#" class="menu-lng__link menu-lng__link_active">Ru</a></li>
+                            <li class="menu-lng__item"><a href="#" class="menu-lng__link">En</a></li>
+                        </ul>
+                        <a class="vds"></a>
+                    </div>
+                </div>
             </div>
-            <ul class="menu header__menu">
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_header">Прямая трансляция</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_header">Ханты-Мансийск</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_header">Новости</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_header">Участники</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_header">Основная информация</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_header">Результаты</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_header">Медиа</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_header">Контакты</a>
-                </li>
-            </ul>
-            <ul class="menu-lng">
-                <li class="menu-lng__item menu-lng__item_active"><a href="#" class="menu-lng__link">Ru</a></li>
-                <li class="menu-lng__item"><a href="#" class="menu-lng__link">En</a></li>
-            </ul>
-            <div class="vds"></div>
         </div>
     </header>
     <main>
         <div class="preview">
             <div class="container">
-                <div class="preview__item">
-                    <h1 class="preview__title">Кубок мира по шахматам 2019</h1>
-                    <img class="preview__img" src="./img/scene1.svg" alt="scene"/>
+                <div class="preview-header">
+                    <h1 class="preview__title">Кубок мира по шахматам<br> <span class="preview__title_date">2019</span></h1>
+                    <div class="img-wrapper">
+                        <img class="preview__img" src="./img/scene1.svg" alt="scene"/>
+                    </div>
                 </div>
-                <div class="preview__item">
+                <div class="preview-footer">
                     <div class="registration preview_registration">
                         <button class="btn btn_registarion">Регистрация</button>
                     </div>
@@ -64,64 +76,77 @@
                         <a href="#" class="soc-seti__item soc-seti__item_facebook"></a>
                     </div>
                     <div class="preview__info info">
-                        <h2>9  сентября <span class="line line-black"></span> 4  октября <span class="info_font">Ханты-Мансийск</span></h2>
+                        <div class="info__date">
+                            <div class="info__text">
+                                <span class="title-number">9</span>
+                                сентября
+                            </div>
+                            <span class="line line-black"></span>
+                            <div class="info__text">
+                                <span class="title-number">4</span>
+                                октября
+                            </div>
+                        </div>
+                        <div class="info_font">Ханты-Мансийск</div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="news">
             <div class="container">
-                <h3 class="title news__title"><span class="news__title_bold">Новости</span> турнира</h3>
-                <div class="news-content news__item">
-                    <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
-                    <div class="news__text">
-                        <div class="news-content__decor">
-                            <span class="line line-green"></span>
-                            <span class="line line-green line-green_angle"></span>
-                            <span class="news-content__date">2 дня назад</span>
+                <div class="content">
+                    <h3 class="title news__title"><span class="news__title_bold">Новости</span> турнира</h3>
+                    <div class="news-content news__item">
+                        <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
+                        <div class="news__text">
+                            <div class="news-content__decor">
+                                <span class="line-green"></span>
+                                <span class="line-green_angle">//</span>
+                                <span class="news-content__date">2 дня назад</span>
+                            </div>
+                            <h4 class="news-content__title">Церемония закрытия FIDE World cup 2019</h4>
+                            <p class="news-content__text">Церемония закрытия состоялась в отеле Biltmore в Тбилиси 27 сентября 2017 года. Игроков и гостей приветствовал министр спорта по делам молодежи.</p>
                         </div>
-                        <h4 class="news-content__title">Церемония закрытия FIDE World cup 2019</h4>
-                        <p class="news-content__text">Церемония закрытия состоялась в отеле Biltmore в Тбилиси 27 сентября 2017 года. Игроков и гостей приветствовал министр спорта по делам молодежи.</p>
                     </div>
-                </div>
-                <div class="news-content news__item">
-                    <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
-                    <div class="news__text">
-                        <div class="news-content__decor">
-                            <span class="line line-green"></span>
-                            <span class="line line-green line-green_angle"></span>
-                            <span class="news-content__date">2 дня назад</span>
+                    <div class="news-content news__item jc-end">
+                        <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
+                        <div class="news__text">
+                            <div class="news-content__decor">
+                                <span class="line-green"></span>
+                                <span class="line-green_angle">//</span>
+                                <span class="news-content__date">2 дня назад</span>
+                            </div>
+                            <h4 class="news-content__title">Церемония закрытия FIDE World cup 2019 Церемония закрытия FIDE World cup 2019</h4>
+                            <p class="news-content__text">Церемония закрытия состоялась в отеле Biltmore в Тбилиси 27 сентября 2017 года. Игроков и гостей приветствовал министр спорта по делам молодежи.</p>
                         </div>
-                        <h4 class="news-content__title">Церемония закрытия FIDE World cup 2019 Церемония закрытия FIDE World cup 2019</h4>
-                        <p class="news-content__text">Церемония закрытия состоялась в отеле Biltmore в Тбилиси 27 сентября 2017 года. Игроков и гостей приветствовал министр спорта по делам молодежи.</p>
                     </div>
-                </div>
-                <div class="news-content news__item">
-                    <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
-                    <div class="news__text">
-                        <div class="news-content__decor">
-                            <span class="line line-green"></span>
-                            <span class="line line-green line-green_angle"></span>
-                            <span class="news-content__date">2 дня назад</span>
+                    <div class="news-content news__item">
+                        <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
+                        <div class="news__text">
+                            <div class="news-content__decor">
+                                <span class="line-green"></span>
+                                <span class="line-green_angle">//</span>
+                                <span class="news-content__date">2 дня назад</span>
+                            </div>
+                            <h4 class="news-content__title">Церемония закрытия</h4>
+                            <p class="news-content__text">Церемония закрытия состоялась в отеле Biltmore в Тбилиси 27 сентября 2017 года. Игроков и гостей приветствовал министр спорта по делам молодежи.</p>
                         </div>
-                        <h4 class="news-content__title">Церемония закрытия</h4>
-                        <p class="news-content__text">Церемония закрытия состоялась в отеле Biltmore в Тбилиси 27 сентября 2017 года. Игроков и гостей приветствовал министр спорта по делам молодежи.</p>
                     </div>
-                </div>
-                <div class="news-content news__item">
-                    <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
-                    <div class="news__text">
-                        <div class="news-content__decor">
-                            <span class="line line-green"></span>
-                            <span class="line line-green line-green_angle"></span>
-                            <span class="news-content__date">2 дня назад</span>
+                    <div class="news-content news__item jc-end">
+                        <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
+                        <div class="news__text">
+                            <div class="news-content__decor">
+                                <span class="line-green"></span>
+                                <span class="line-green_angle">//</span>
+                                <span class="news-content__date">2 дня назад</span>
+                            </div>
+                            <h4 class="news-content__title">Церемония закрытия FIDE World cup 2019</h4>
+                            <p class="news-content__text">Церемония закрытия состоялась в отеле Biltmore в Тбилиси 27 сентября 2017 года. Игроков и гостей приветствовал министр спорта по делам молодежи.</p>
                         </div>
-                        <h4 class="news-content__title">Церемония закрытия FIDE World cup 2019</h4>
-                        <p class="news-content__text">Церемония закрытия состоялась в отеле Biltmore в Тбилиси 27 сентября 2017 года. Игроков и гостей приветствовал министр спорта по делам молодежи.</p>
                     </div>
+                    <button class="btn btn_still">Показать еще</button>
                 </div>
             </div>
-            <button class="btn btn_still">Показать еще</button>
         </div>
         <div class="partners">
             <div class="container">
@@ -132,7 +157,7 @@
                         <div class="switcher_next"></div>
                     </div>
                 </div>
-                <div class="carousel">    
+                <div class="carousel">
                     <div class="carousel__item carousel__item_current">
                         <img src="img/partners/image 8.1.svg" alt="partners_logo"/>
                     </div>
@@ -154,7 +179,7 @@
                     <div class="carousel__item carousel__item_current">
                         <img src="img/partners/image.svg" alt="partners_logo"/>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </main>

@@ -1,0 +1,46 @@
+@import "header/header.css";
+@import "main/main.css";
+
+:root {
+    --main-font-family: 'Montserrat';
+    --main-color-black: #333333;
+    --main-color-green: #C2DA6B;
+    --main-color-white: #ffffff;
+    --main-color-gray: #888888;
+    --main-font-style: normal;
+    --main-font-weight: 700;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    color: var(--main-color-black);
+    font-family: var(--main-font-family);
+    font-weight: var(--main-font-weight);
+    font-style: var(--main-font-style);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
