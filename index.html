@@ -53,11 +53,15 @@
                         </ul>
                         <a class="vds"></a>
                     </div>
+                    <div class="btn-burger-wrapper">
+                        <a class="btn__burger-menu"></a>
+                    </div>
+                    <div class="burger-menu"></div>
                 </div>
             </div>
         </div>
     </header>
-    <main>
+    <main class="main">
         <div class="preview">
             <div class="container">
                 <div class="preview-header">
@@ -95,8 +99,8 @@
         <div class="news">
             <div class="container">
                 <div class="content">
-                    <h3 class="title news__title"><span class="news__title_bold">Новости</span> турнира</h3>
-                    <div class="news-content news__item">
+                    <h3 class="title news__title">Новости <span class="news__title_weight">турнира</span></h3>
+                    <div class="news-content news__item decor1">
                         <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
                         <div class="news__text">
                             <div class="news-content__decor">
@@ -108,7 +112,7 @@
                             <p class="news-content__text">Церемония закрытия состоялась в отеле Biltmore в Тбилиси 27 сентября 2017 года. Игроков и гостей приветствовал министр спорта по делам молодежи.</p>
                         </div>
                     </div>
-                    <div class="news-content news__item jc-end">
+                    <div class="news-content news__item jc-end decor2">
                         <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
                         <div class="news__text">
                             <div class="news-content__decor">
@@ -120,7 +124,7 @@
                             <p class="news-content__text">Церемония закрытия состоялась в отеле Biltmore в Тбилиси 27 сентября 2017 года. Игроков и гостей приветствовал министр спорта по делам молодежи.</p>
                         </div>
                     </div>
-                    <div class="news-content news__item">
+                    <div class="news-content news__item decor3">
                         <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
                         <div class="news__text">
                             <div class="news-content__decor">
@@ -132,7 +136,7 @@
                             <p class="news-content__text">Церемония закрытия состоялась в отеле Biltmore в Тбилиси 27 сентября 2017 года. Игроков и гостей приветствовал министр спорта по делам молодежи.</p>
                         </div>
                     </div>
-                    <div class="news-content news__item jc-end">
+                    <div class="news-content news__item jc-end decor4">
                         <img class="news__photo" src="img/new_photo.svg" alt="new_photo"/>
                         <div class="news__text">
                             <div class="news-content__decor">
@@ -153,30 +157,30 @@
                 <div class="partners__header">
                     <h3 class="title partners__title">Партнеры</h3>
                     <div class="switcher">
-                        <div class="switcher_prev"></div>
-                        <div class="switcher_next"></div>
+                        <div class="switcher__item switcher_prev"></div>
+                        <div class="switcher__item switcher_next"></div>
                     </div>
                 </div>
                 <div class="carousel">
                     <div class="carousel__item carousel__item_current">
                         <img src="img/partners/image 8.1.svg" alt="partners_logo"/>
                     </div>
-                    <div class="carousel__item carousel__item_current">
+                    <div class="carousel__item">
                         <img src="img/partners/image 6.1.svg" alt="partners_logo"/>
                     </div>
-                    <div class="carousel__item carousel__item_current">
+                    <div class="carousel__item">
                         <img src="img/partners/image 5.1.svg" alt="partners_logo"/>
                     </div>
-                    <div class="carousel__item carousel__item_current">
+                    <div class="carousel__item">
                         <img src="img/partners/image 4.1.svg" alt="partners_logo"/>
                     </div>
-                    <div class="carousel__item carousel__item_current">
+                    <div class="carousel__item">
                         <img src="img/partners/image 3.1.svg" alt="partners_logo"/>
                     </div>
-                    <div class="carousel__item carousel__item_current">
+                    <div class="carousel__item">
                         <img src="img/partners/image 2.1.svg" alt="partners_logo"/>
                     </div>
-                    <div class="carousel__item carousel__item_current">
+                    <div class="carousel__item">
                         <img src="img/partners/image.svg" alt="partners_logo"/>
                     </div>
                 </div>
@@ -184,43 +188,37 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="logos logos_footer">
-                <img src="img/logo_footer.svg" alt="footer_logo1"/>
-                <img src="img/logo2.svg" alt="footer_logo2"/>
-                <img src="img/logo3.svg" alt="footer_logo3"/>
-                <img src="img/logo4.svg" alt="footer_logo4"/>
+        <div class="container footer-wrapper">
+            <div class="footer-item">
+                <div class="logos">
+                    <img class="logos__img logos__img_main" src="img/logo_footer.svg" alt="logo1"/>
+                    <img class="logos__img logos__img_mg-left" src="img/logo2.svg" alt="logo2"/>
+                    <img class="logos__img" src="img/logo3.svg" alt="logo3"/>
+                    <img class="logos__img" src="img/logo4.svg" alt="logo4"/>
+                </div>
+                <div class="wrapper-text footer-color-text">Копирование информации, допускается, только с указанием активной ссылки на сайт</div>
             </div>
             <ul class="menu footer__menu">
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_footer">Прямая трансляция</a>
+                <li class="menu__item menu__item_footer">
+                    <a href="#" class="menu__link menu__link_footer">На главную</a>
                 </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_footer">Ханты-Мансийск</a>
+                <li class="menu__item menu__item_footer">
+                    <a href="#" class="menu__link menu__link_footer">История кубка мира</a>
                 </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_footer">Новости</a>
+                <li class="menu__item menu__item_footer">
+                    <a href="#" class="menu__link menu__link_footer">О Ханты-Мансийске</a>
                 </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_footer">Участники</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_footer">Основная информация</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_footer">Результаты</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_footer">Медиа</a>
-                </li>
-                <li class="menu__item">
+                <li class="menu__item menu__item_footer">
                     <a href="#" class="menu__link menu__link_footer">Контакты</a>
+                </li>
+                <li class="menu__item menu__item_footer">
+                    <a href="#" class="menu__link menu__link_footer">Информация для участников</a>
                 </li>
             </ul>
             <div class="contacts">
-                <span class="contacts__phone">+7(3467)555-321</span>
-                <span class="contacts__mail">mail@mail.ru</span>
-                <span class="location">Ханты-Мансийск Лопарева,6</span>
+                <div class="contacts__phone contacts_font">+7(3467)555-321</div>
+                <div class="contacts__mail contacts_font">mail@mail.ru</div>
+                <div class="location footer-color-text">Ханты-Мансийск Лопарева,6</div>
             </div>
         </div>
     </footer>

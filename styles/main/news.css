@@ -1,14 +1,117 @@
 .news {
-    padding-top: 150px;
+    position: relative;
+    padding: 150px 0 100px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.news__photo {
+    z-index: 1;
+}
+
+.news__title:before {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    background-color: #F0F0F0;
+    top: -150px;
+    left: -328px;
+    z-index: -1;
+}
+
+.title {
+    font-size: 56px;
+    font-weight: 900;
 }
 
 .news__title {
-    font-size: 56px;
-    font-weight: 400;
+    position: relative;
+    z-index: 3;
 }
 
-.news__title_bold {
-    font-weight: 900;
+.news__title:after {
+    content: "";
+    position: absolute;
+    width: 215px;
+    height: 60px;
+    background-color: var(--main-color-green);
+    left: 0;
+    z-index: -1;
+}
+
+.decor1,
+.decor2,
+.decor3,
+.decor4 {
+    position: relative;
+}
+
+.decor1 {
+    z-index: 3;
+}
+
+.decor1:after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 570px;
+    top: -62%;
+    right: -9%;
+    background-image: url("../../img/Group 19.svg");
+}
+
+.decor2:before {
+    content: "";
+    position: absolute;
+    width: 122px;
+    height: 149px;
+    background-image: url("../../img/Group 9.svg");
+    background-repeat: no-repeat;
+    left: -120px;
+    top: 30%;
+    z-index: 1;
+}
+
+.decor3:before {
+    content: "";
+    position: absolute;
+    width: 547px;
+    height: 351px;
+    background-image: url("../../img/Group 13.svg");
+    background-repeat: no-repeat;
+    top: -78%;
+    left: -18%;
+    z-index: 0;
+}
+
+.decor4:before {
+    content: "";
+    position: absolute;
+    width: 489px;
+    height: 700px;
+    background-image: url("../../img/Group 21.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 15%;
+    left: -19%;
+    z-index: 0;
+}
+
+.decor4:after {
+    content: "";
+    position: absolute;
+    width: 274px;
+    height: 600px;
+    background-image: url("../../img/Group 18.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -59%;
+    right: -19%;
+    z-index: -1;
+}
+
+.news__title_weight {
+    font-weight: 400;
 }
 
 .news-content {
@@ -73,12 +176,13 @@
 }
 
 .btn_still {
-    max-width: 230px;
+    max-width: 231px;
     margin: 0 auto;
     padding: 25px 56px;
     background-color: var(--main-color-white);
     border: 1px solid #BBBBBB;
     color: var(--main-color-green);
+    font-weight: normal;
     cursor: pointer;
 }
 

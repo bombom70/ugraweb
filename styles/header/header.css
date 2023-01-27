@@ -94,3 +94,9 @@
     background-image: url("../../img/glasses.svg");
     cursor: pointer;
 }
+
+@media (max-width: 1700px) {
+    .header-wrapper:after {
+        display: none;
+    }
+}
