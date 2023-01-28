@@ -95,6 +95,48 @@
     cursor: pointer;
 }
 
+.btn-burger-wrapper,
+.burger-menu {
+    display: none;
+}
+
+.btn__burger-menu {
+    width: 35px;
+    height: 6px;
+    border-radius: 15px;
+    background-color: var(--main-color-green);
+}
+
+.btn__burger-menu:before {
+    content: "";
+    position: absolute;
+    top: 51px;
+    width: 35px;
+    height: 6px;
+    border-radius: 15px;
+    background-color: var(--main-color-green);
+}
+
+.btn__burger-menu:after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    width: 35px;
+    height: 6px;
+    border-radius: 15px;
+    background-color: var(--main-color-green);
+}
+
+.btn-burger-wrapper {
+    padding: 20px 10px;
+    border: 2px solid var(--main-color-black);
+}
+
+.menu__link_header:hover {
+    color: var(--main-color-green);
+}
+
+
 @media (max-width: 1700px) {
     .header-wrapper:after {
         display: none;
