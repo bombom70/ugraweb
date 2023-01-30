@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const burgerWrapper = document.querySelector(".burger-wrapper");
     const btnBurgerMenu = document.querySelector(".btn__burger-menu");
     const btnСlose = document.querySelector(".btn-close");
+    const headerMenu = document.querySelector(".header-menu");
 
     const generateMenu = (state, element, depth = 1) => {
         state.forEach(data => {
@@ -58,7 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
             spanEl.textContent = title;
             menuEl.append(spanEl);
             element.append(menuEl);
-            if (children) {
+            if (children?.length > 0) {
+                spanEl.classList.add("arrow");
                 return generateMenu(children, menuEl, depth + 1);
             }
         });
@@ -68,13 +70,17 @@ document.addEventListener("DOMContentLoaded", () => {
     btnBurgerMenu.addEventListener("click", () => {
         if (burgerWrapper.classList.contains("isShow")) {
             burgerWrapper.classList.remove("isShow");
+            headerMenu.classList.remove("show-header-menu");
+            return;
         } else {
+            headerMenu.classList.add("show-header-menu");
             burgerWrapper.classList.add("isShow");
         }
     });
 
     btnСlose.addEventListener("click", () => {
-        burgerWrapper.classList.remove("isShow");
+        const asd = document.querySelector(".isShow");
+        asd.classList.remove("isShow");
     });
 
 });

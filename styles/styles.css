@@ -17,7 +17,6 @@
 body {
     padding: 0;
     margin: 0;
-
     color: var(--main-color-black);
     font-family: var(--main-font-family);
     font-weight: var(--main-font-weight);
@@ -55,6 +54,9 @@ a {
 
 .isShow {
     display: block;
+    z-index: 10;
+    transition: transform .7s;
+    transform: translateX(-100%);
 }
 
 @media (max-width: 1400px) {
