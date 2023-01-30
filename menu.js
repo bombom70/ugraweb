@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const burgerMenu = document.querySelector(".burger-menu");
     const burgerWrapper = document.querySelector(".burger-wrapper");
     const btnBurgerMenu = document.querySelector(".btn__burger-menu");
+    const btnСlose = document.querySelector(".btn-close");
+
     const generateMenu = (state, element, depth = 1) => {
         state.forEach(data => {
             const { title, children } = data;
@@ -69,6 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             burgerWrapper.classList.add("isShow");
         }
+    });
+
+    btnСlose.addEventListener("click", () => {
+        burgerWrapper.classList.remove("isShow");
     });
 
 });
