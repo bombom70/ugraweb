@@ -10,9 +10,16 @@
     margin-bottom: 100px;
 }
 
+.carrousel-wrapper {
+    overflow: hidden;
+}
+
 .carousel {
     display: flex;
-    gap: 100px;
+    position: relative;
+    width: 1400px;
+    left: 0;
+    transition: all ease 1s;
 }
 
 .switcher {
@@ -50,6 +57,9 @@
 
 .carousel__item {
     height: 150px;
+    flex: 1 0 200px;
+    text-align: center;
+    overflow: hidden;
 }
 
 .carousel__item_current {

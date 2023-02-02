@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (children?.length > 0) {
                 const arrow = document.createElement("div");
                 arrow.classList.add("arrow");
-                console.log(children);
                 const subMenu = document.createElement("div");
                 subMenu.classList.add("sub-menu-mob");
                 aEl.append(arrow);
@@ -124,4 +123,51 @@ document.addEventListener("DOMContentLoaded", () => {
             arrowEl.style.transform = "rotate(180deg)";
         });
     });
+
+    const slider = () => {
+        const carousel = document.querySelector(".carousel");
+        const wrapper = document.querySelector(".carrousel-wrapper");
+        const items = document.querySelectorAll(".carousel__item");
+        const prevBtn = document.querySelector(".switcher_prev");
+        const nextBtn = document.querySelector(".switcher_next");
+        let width = wrapper.offsetWidth;
+        let index = Math.round(width / 200);
+        let offset = 200;
+        console.log(document.querySelector(".carousel__item").offsetWidth);
+        console.log(items[0].offsetWidth);
+
+        prevBtn.addEventListener("click", () => {
+            nextBtn.style.backgroundImage = "url(img/next.svg)";
+            nextBtn.style.transform = "rotate(360deg)";
+            if (index === Math.round(width / 200) + 1) {
+                prevBtn.style.backgroundImage = "url(img/prev.svg)";
+                prevBtn.style.transform = "rotate(360deg)";
+            }
+            if (index === Math.round(width / 200)) {
+                prevBtn.disabled = true;
+                return;
+            }
+            index -= 1;
+            offset -= 200;
+            carousel.style.left = -offset + 200 + 'px';
+        });
+
+        nextBtn.addEventListener("click", () => {
+            prevBtn.style.transform = "rotate(180deg)";
+            prevBtn.style.backgroundImage = "url(img/next.svg)";
+
+            if (index === items.length - 1) {
+                nextBtn.style.transform = "rotate(180deg)";
+                nextBtn.style.backgroundImage = "url(img/prev.svg)";
+            }
+            if (index === items.length) {
+                nextBtn.disabled = true;
+                return;
+            }
+            index += 1;
+            offset += 200;
+            carousel.style.left = -offset + 200 + 'px';
+        });
+    }
+    slider();
 });

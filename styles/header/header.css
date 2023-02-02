@@ -1,3 +1,7 @@
+.header {
+    overflow: hidden;
+}
+
 .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -335,7 +339,6 @@
 .activeSubMenu {
     display: block;
 }
-
 
 @media (max-width: 1700px) {
     .header-wrapper:after {
