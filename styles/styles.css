@@ -59,7 +59,7 @@ a {
     right: 0;
     transition: all .5s ease-out;
     transform: translateY(-100vh);
-    height: 500vh;
+    height: 200vh;
 }
 
 @media (max-width: 1400px) {
@@ -513,8 +513,7 @@ a {
     }
 
     .carousel__item {
-        width: 166px;
-        flex: 1 1 166px;
+        flex: 1 0 178px;
     }
 
     .logos__img_main {
