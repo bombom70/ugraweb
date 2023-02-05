@@ -158,6 +158,10 @@ a {
         max-width: 992px;
     }
 
+    .carousel__item {
+        flex: 1 0 250px;
+    }
+
     .preview-header:after {
         right: -10%;
         width: 500px;
@@ -356,6 +360,14 @@ a {
 @media (max-width: 677px) {
     .container {
         max-width: 469px;
+    }
+
+    .carousel__item {
+        flex: 1 0 167px;
+    }
+
+    .carrousel-wrapper {
+        overflow: scroll;
     }
 
     .news-content {
