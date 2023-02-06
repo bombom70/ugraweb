@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
     const burgerMenu = document.querySelector(".burger-menu");
     const burgerWrapper = document.querySelector(".burger-wrapper");
-    const btnBurgerMenu = document.querySelector(".btn__burger-menu");
+    const btnBurgerMenu = document.querySelector(".btn-burger-wrapper");
     const btnСlose = document.querySelector(".btn-close");
     const headerMenu = document.querySelector(".header-menu");
     const main = document.querySelector(".main");
