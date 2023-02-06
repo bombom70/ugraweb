@@ -176,8 +176,8 @@
 
 .burger-wrapper {
     width: 100vw;
-    height: 200vh;
-    position: absolute;
+    height: 100%;
+    position: fixed;
     top: 100%;
     right: 0;
     background: white;
@@ -185,6 +185,7 @@
     opacity: 0;
     z-index: -1;
     transition: all .5s ease-out;
+    overflow: scroll;
 }
 
 .logo-burger_header {
