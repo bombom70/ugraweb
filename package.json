@@ -1,0 +1,28 @@
+{
+  "name": "ugraweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bombom70/ugraweb.git"
+  },
+  "keywords": [],
+  "author": "Khamdamov Nikolai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bombom70/ugraweb/issues"
+  },
+  "homepage": "https://github.com/bombom70/ugraweb#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.58.0"
+  }
+}
