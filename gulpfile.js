@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 const rename = require('gulp-rename');
+const del = require('del');
 
 function convert() {
     return gulp.src('./styles/style.sass')
@@ -24,17 +25,20 @@ function watchServer() {
     gulp.watch("./**/*.sass", reload);
 }
 
-function startServe(done) {
+function clear() {
+    return del('./dist/');
+}
+
+function startServe() {
     browserSync.init({
         server: {
             baseDir: "./"
         },
         port: 3000
     });
-    done();
+    gulp.watch("./**/*.html", reload);
+    gulp.watch("./**/*.js", reload);
+    gulp.watch("./**/*.sass", gulp.series(clear, convert, reload));
 }
 
-// gulp.task(convert);
-// gulp.task('default', gulp.parallel(watchServer, startServe));
-
-exports.default = gulp.parallel(convert, watchServer, startServe);
+exports.default = gulp.series(clear, convert, startServe);

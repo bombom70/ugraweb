@@ -21,11 +21,11 @@
   "homepage": "https://github.com/bombom70/ugraweb#readme",
   "devDependencies": {
     "browser-sync": "^2.27.11",
+    "del": "6.0.0",
     "gulp": "^4.0.2",
-    "gulp-imagemin": "^8.0.0",
+    "gulp-imagemin": "7.1.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.58.0",
-    "gulp-rename": "^2.0.0"
-
+    "sass": "^1.58.0"
   }
 }
