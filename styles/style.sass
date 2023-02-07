@@ -1,0 +1,365 @@
+$main-font-family: 'Montserrat'
+$main-color-black: #333333
+$main-color-green: #C2DA6B
+$main-color-white: #ffffff
+$main-color-gray: #888888
+$main-font-style: normal
+$main-font-weight: 700
+
+@import "main/main"
+@import "header/header"
+@import "main/news"
+@import "main/partners"
+@import "footer/footer"
+
+body
+  padding: 0
+  margin: 0
+  color: $main-color-black
+  font-family: $main-font-family
+  font-weight: $main-font-weight
+  font-style: $main-font-style
+
+h1,h2,h3,h4,h5,h6,p,ul
+  padding: 0
+  margin: 0
+
+li
+  list-style-type: none
+
+a
+  text-decoration: none
+
+.container
+  max-width: 1400px
+  margin: 0 auto
+
+.soc-seti-mobile
+  display: none
+
+.isShow
+  z-index: 10
+  opacity: 1
+  visibility: visible
+  right: 0
+  transition: all .5s ease-out
+  transform: translateY(-100vh)
+
+@media (max-width: 1400px)
+  .container
+    max-width: 1100px
+
+  .img-wrapper:after,
+  .rectangle_decor:before,
+  .img-wrapper:before,
+  .decor2:before
+    display: none
+
+  .news__title:before
+    left: -160px
+
+  .header-wrapper
+    gap: 60px
+
+  .menu-wrapper
+    gap: 0px
+
+  .preview__title
+    margin-top: 50px
+    font-size: 67px
+    line-height: 90px
+    flex: 0 0 576px
+
+  .preview-header
+    align-items: flex-start
+
+  .preview-footer
+    position: relative
+
+  .preview__info
+    position: absolute
+    margin: 0
+    left: 0
+    top: -163px
+
+  .info_font
+    text-align: start
+
+  .preview_registration
+    flex: 0 0 auto
+
+  .preview-header:after
+    right: 0
+    width: 600px
+
+  .preview__img
+    right: -100px
+
+  .decor3:before
+    left: -36%
+
+  .decor4:before
+    top: 30%
+    left: -18%
+
+  .decor4:after
+    right: -8%
+
+  .decor1:after
+    right: -15%
+
+
+
+@media (max-width: 1280px)
+  .container
+    max-width: 992px
+
+  .carousel__item
+    flex: 1 0 250px
+
+  .menu-wrapper
+    justify-content: flex-end
+
+  .decor4:before
+    top: 50%
+    left: -26%
+
+  .decor4:after
+    right: -115px
+
+  .logos__img_mg-left
+    margin: 0
+
+  .preview__img
+    right: -52px
+
+  .decor1:after
+    right: -27%
+
+  .footer-wrapper
+    flex-wrap: wrap
+
+  .footer__menu
+    order: 3
+    flex: 1 1 auto
+    max-width: 100%
+    gap: 20px
+    justify-content: space-between
+
+  .menu__item_footer
+    flex: 1 1 150px
+
+  .preview-header
+    &:after
+      right: -10%
+      width: 500px
+
+@media (max-width: 992px)
+  .container
+    max-width: 780px
+
+  .preview__img
+    right: 120px
+    top: 120px
+
+  .header__menu
+    display: none
+
+  .btn-burger-wrapper, .btn__burger-menu
+    display: block
+
+  .preview
+    padding-bottom: 60px
+    &-footer
+      flex-direction: column
+      align-items: flex-start
+      gap: 100px
+
+    &_registration
+      background-color: var(--main-color-green)
+      padding: 0
+      &:before
+        display: none
+
+
+    &__soc-seti
+      display: none
+
+
+  .decor1:after
+    display: none
+
+  .btn_registarion
+    padding: 25px 95px
+
+  .news__title:before
+    display: none
+
+  .soc-seti-mobile
+    display: flex
+    gap: 35px
+    padding-top: 45px
+
+  .soc-seti__item_twitter
+    background-image: url("../../img/tw-gray.svg")
+
+  .soc-seti__item__instagam
+    background-image: url("../../img/insta-gray.svg")
+
+  .soc-seti__item_facebook
+    background-image: url("../../img/fc-gray.svg")
+
+  .news
+    padding-top: 80px
+
+  .decor4:before, .decor4:after, .decor3:before
+    display: none
+
+  .jc-end
+    justify-content: flex-start
+
+  .menu-lng_mob
+    flex: 1 1 auto
+    width: 100%
+    justify-content: center
+    background-color: rgb(187, 187, 187, 0.5)
+    padding: 20px 0
+
+
+@media (max-width: 768px)
+  .container
+    max-width: 685px
+
+  .title-number
+    font-size: 34px
+
+  .line-black
+    width: 29px
+
+  .info__date
+    gap: 21px
+
+  .content
+    gap: 40px
+
+  .btn_still
+    margin-top: 50px
+
+@media (max-width: 677px)
+  .container
+    max-width: 469px
+
+  .carousel__item
+    flex: 1 0 167px
+
+  .carrousel-wrapper
+    overflow: scroll
+
+  .line-green
+    display: none
+
+  .soc-seti-mobile
+    justify-content: center
+
+  .footer-wrapper
+    gap: 100px
+
+  .footer-item
+    flex: 1 1 auto
+    gap: 20px
+
+  .logos
+    flex: 1 1 auto
+    &__img_main
+      width: 75%
+
+
+  .footer-color-text
+    flex: 1 1 auto
+    width: auto
+    text-align: center
+
+  .contacts
+    order: 3
+    flex: 1 1 auto
+
+  .contacts__phone, .contacts__mail, .location
+    text-align: center
+
+  .location
+    width: auto
+
+  .btn__burger-menu:before
+    top: 55px
+
+  .btn__burger-menu:after
+    top: 81px
+
+  .menu-wrapper, .img-wrapper
+    display: none
+
+  .soc-seti__item_facebook
+    width: 22px
+    height: 40px
+    background-size: contain
+
+  .soc-seti__item__instagam
+    width: 40px
+    height: 40px
+    background-size: contain
+
+  .soc-seti__item_twitter
+    width: 50px
+    height: 40px
+    background-size: contain
+
+  .partners__title
+    width: 100%
+    text-align: center
+
+  .partners__header:before
+    left: 78px
+
+  .switcher
+    display: none
+
+  .preview-header
+    &:after
+      display: none
+
+@media (max-width: 560px)
+  .mini-logo
+    display: none
+
+  .carousel__item
+    flex: 1 0 178px
+
+  .btn__burger-menu:before
+    top: 58px
+
+  .btn__burger-menu:after
+    top: 85px
+
+  .into__font
+    text-align: center
+
+@media (max-width: 470px)
+  .container
+    max-width: 340px
+
+  .title
+    font-size: 34px
+
+  .partners__header:before
+    left: 76px
+    top: 15px
+
+  .btn__burger-menu:before
+    top: 42px
+
+  .btn__burger-menu:after
+    top: 69px
+
+  .info__text
+    gap: 10px
+

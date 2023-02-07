@@ -1,0 +1,174 @@
+.news
+  position: relative
+  padding: 150px 0 100px
+  border-bottom: 1px solid #F0F0F0
+  &__photo
+    z-index: 1
+
+  &__title:before
+    content: ""
+    position: absolute
+    width: 600px
+    height: 400px
+    background-color: #F0F0F0
+    top: -150px
+    left: -129px
+    z-index: -1
+
+  &__title
+    position: relative
+    z-index: 3
+    &:after
+      content: ""
+      position: absolute
+      width: 215px
+      height: 60px
+      background-color: $main-color-green
+      left: 2px
+      top: 15px
+      z-index: -1
+
+    &_weight
+      font-weight: 400
+
+
+  &-content
+    display: flex
+    gap: 36px
+    &__title
+      font-family: 'Baufra'
+      font-size: 32px
+      line-height: 44px
+      font-weight: 700
+
+    &__text
+      max-width: 360px
+      font-size: 16px
+      font-weight: normal
+      line-height: 28px
+      color: $main-color-gray
+
+    &__decor
+      display: flex
+      align-items: center
+      gap: 30px
+
+    &__date
+      font-size: 14px
+      line-height: 24px
+      color: $main-color-green
+
+
+  &__text
+    display: flex
+    flex-direction: column
+    gap: 30px
+    justify-content: flex-end
+    max-width: 470px
+
+
+.title
+  font-size: 56px
+  font-weight: 900
+
+.decor1, .decor2, .decor3, .decor4
+  position: relative
+
+.decor1
+  z-index: 3
+  &:after
+    content: ""
+    position: absolute
+    width: 500px
+    height: 570px
+    top: -62%
+    right: -9%
+    background-image: url("../../img/Group 19.svg")
+
+
+.decor2:before
+  content: ""
+  position: absolute
+  width: 122px
+  height: 149px
+  background-image: url("../../img/Group 9.svg")
+  background-repeat: no-repeat
+  left: -90px
+  top: 30%
+  z-index: 1
+
+.decor3:before
+  content: ""
+  position: absolute
+  width: 547px
+  height: 351px
+  background-image: url("../../img/Group 13.svg")
+  background-repeat: no-repeat
+  top: -78%
+  left: -18%
+  z-index: 0
+
+.decor4:before
+  content: ""
+  position: absolute
+  width: 489px
+  height: 700px
+  background-image: url("../../img/Group 21.svg")
+  background-repeat: no-repeat
+  background-position: center
+  top: 15%
+  left: -19%
+  z-index: 0
+
+.decor4:after
+  content: ""
+  position: absolute
+  width: 274px
+  height: 600px
+  background-image: url("../../img/Group 18.svg")
+  background-repeat: no-repeat
+  background-position: center
+  top: -59%
+  right: -19%
+  z-index: -1
+
+.rectangle_decor:before
+  content: ""
+  position: absolute
+  right: -18%
+  top: -74%
+  width: 466px
+  height: 200px
+  background-color: $main-color-green
+
+.line-green
+  width: 140px
+  height: 2px
+  background-color: $main-color-green
+  &_angle
+    color: $main-color-green
+    font-weight: 900
+
+
+.jc-end
+  justify-content: flex-end
+
+.content
+  display: flex
+  flex-direction: column
+  gap: 100px
+
+.btn_still
+  max-width: 231px
+  margin: 0 auto
+  padding: 25px 56px
+  background-color: $main-color-white
+  border: 1px solid #BBBBBB
+  color: $main-color-green
+  font-weight: normal
+  cursor: pointer
+  &:hover
+    color: $main-color-gray
+    background-color: $main-color-green
+
+

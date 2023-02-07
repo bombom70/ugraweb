@@ -1,8 +1,8 @@
-@import "main/main.css";
-@import "header/header.css";
-@import "main/news.css";
-@import "main/partners.css";
-@import "footer/footer.css";
+@import "main.css";
+@import "header.css";
+@import "news.css";
+@import "partners.css";
+@import "footer.css";
 
 :root {
     --main-font-family: 'Montserrat';
@@ -269,15 +269,15 @@ a {
     }
 
     .soc-seti__item_twitter {
-        background-image: url("../img/tw-gray.svg");
+        background-image: url("../../img/tw-gray.svg");
     }
 
     .soc-seti__item__instagam {
-        background-image: url("../img/insta-gray.svg");
+        background-image: url("../../img/insta-gray.svg");
     }
 
     .soc-seti__item_facebook {
-        background-image: url("../img/fc-gray.svg");
+        background-image: url("../../img/fc-gray.svg");
     }
 
     .news {
