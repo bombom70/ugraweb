@@ -176,7 +176,7 @@ a
       gap: 100px
 
     &_registration
-      background-color: var(--main-color-green)
+      background-color: $main-color-green
       padding: 0
       &:before
         display: none
@@ -230,6 +230,13 @@ a
   .container
     max-width: 685px
 
+  .news__photo
+    max-width: 330px
+
+  .preview__img
+    right: 45%
+    top: 26%
+
   .title-number
     font-size: 34px
 
@@ -245,6 +252,20 @@ a
   .btn_still
     margin-top: 50px
 
+  .news-content__text
+    height: 85px
+    white-space: normal
+    overflow: hidden
+    padding: 5px
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
+
+  .news-content__title
+    font-size: 30px
+    line-height: 35px
+
 @media (max-width: 677px)
   .container
     max-width: 469px
@@ -255,11 +276,24 @@ a
   .carrousel-wrapper
     overflow: scroll
 
+  .news-content
+    flex-direction: column
+
   .line-green
     display: none
 
+  .news__title
+    font-size: 50px
+
   .soc-seti-mobile
     justify-content: center
+
+  .news__photo, .news-content__text
+    min-width: 100%
+
+  .news-content__title
+    font-size: 34px
+    line-height: 45px
 
   .footer-wrapper
     gap: 100px
@@ -294,6 +328,24 @@ a
 
   .btn__burger-menu:after
     top: 81px
+
+  .preview__title
+    flex: 1 1 auto
+    font-size: 54px
+    line-height: 70px
+    text-align: center
+
+  .preview-footer
+    flex-direction: column-reverse
+    margin-top: 30px
+    align-items: center
+    gap: 50px
+
+  .preview__info
+    position: initial
+
+  .news__title
+    margin-bottom: 80px
 
   .menu-wrapper, .img-wrapper
     display: none
