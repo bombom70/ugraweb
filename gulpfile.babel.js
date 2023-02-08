@@ -3,6 +3,8 @@ const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 const rename = require('gulp-rename');
 const del = require('del');
+const babel = require('gulp-babel');
+const uglify  = require('gulp-uglify');
 
 function convert() {
     return gulp.src('./styles/style.sass')
@@ -10,6 +12,15 @@ function convert() {
         .pipe(sass({
             outputStyle: 'compressed'
         }).on('error', sass.logError))
+        .pipe(gulp.dest('./dist/'))
+        .pipe(browserSync.stream());
+}
+
+function convertJS() {
+    return gulp.src('./menu.js')
+        .pipe(babel())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(uglify())
         .pipe(gulp.dest('./dist/'))
         .pipe(browserSync.stream());
 }
@@ -37,8 +48,8 @@ function startServe() {
         port: 3000
     });
     gulp.watch("./**/*.html", reload);
-    gulp.watch("./**/*.js", reload);
+    gulp.watch("./**/*.js", gulp.series(clear, convertJS, reload));
     gulp.watch("./**/*.sass", gulp.series(clear, convert, reload));
 }
 
-exports.default = gulp.series(clear, convert, startServe);
+exports.default = gulp.series(clear, convert, convertJS,  startServe);
