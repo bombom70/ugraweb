@@ -1,6 +1,4 @@
-import Post from "./Post";
+import makeMenu from "./menu";
 import "../styles/style.sass";
 
-const post = new Post("Webpack post title");
-
-console.log(post.toString());
+makeMenu();
