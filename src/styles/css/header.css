@@ -96,7 +96,7 @@
 .vds {
     width: 37px;
     height: 15px;
-    background-image: url("../../../img/glasses.svg");
+    background-image: url("../../img/glasses.svg");
     cursor: pointer;
 }
 
@@ -328,7 +328,7 @@
     content: "";
     width: 22px;
     height: 15px;
-    background-image: url("../../../img/arrow.svg");
+    background-image: url("../../img/arrow.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
